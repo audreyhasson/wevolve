@@ -1,19 +1,16 @@
+import { useSession, signIn, signOut } from "next-auth/react";
 import Head from 'next/head';
 import Template from '../components/template.js';
-import styles from '../styles/Home.module.css';
-import { useSession, signIn, signOut } from "next-auth/react"
 
 
 export default function Home() {
-
   const { data: session } = useSession();
-
-  console.log(session);
   
   return (
     <div>
       <Template>
-        <p>hi! i should be green rn &gt;:|</p>
+        <p>username: {session?.user?.name}</p>
+        <p>This is the account page.</p>
       </Template>
     </div>
   )
