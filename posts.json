@@ -1,0 +1,11 @@
+{
+    "posts": [
+        ["go out for lunch", "/goOutLunch.jpg", "Kayleigh"],
+        ["meet someone new", "/meetNew.jpg", "Audrey"],
+        ["selfie with a stranger", "/moSelfStranger.jpg", "Morgan"],
+        ["take a trip with friends", "/takeTripFriend.jpg", "Pam"],
+        ["write a thank you note", "/writeThankYou.jpg", "Natalie"],
+        ["plan an outing", "/planAnOuting.JPEG", "Ethan"],
+        ["selflie with a stranger", "/selfieWStranger.jpg", "Mateo"]
+    ]
+}

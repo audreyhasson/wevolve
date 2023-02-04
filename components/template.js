@@ -46,6 +46,7 @@ export default function Template( {children}) {
         </div>
         <div className={styles.dropDown + " hide"} id="dropdown">
             <ul>
+                <li><a href="/">HOME</a></li>
                 <li><a href="/post">POST</a></li>
                 <li><a href="/account">Account</a></li>
                 <li><button onClick={() => signOut()}>Log out</button></li>
