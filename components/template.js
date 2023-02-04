@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from './/templates.module.css';
+import Image from 'next/image';
 import { useSession, signIn, signOut } from "next-auth/react"
 
 export default function Template( {children}) {    
@@ -15,23 +16,25 @@ export default function Template( {children}) {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
         </Head>
-        <header>
-           
-        </header>
-        <div>
-            <p>this is the top of the template!</p>
-        </div>
-        <div className={styles.signup}>
-          {session && session.user ? (
-            <button onClick={() => signOut()}>Sign out</button>
-          ) : (
-            <button onClick={() => signIn()}>Sign in</button>
-          )}
-        </div>
         {session && session.user ? (
+            <>
+            <ul className={styles.navigation}>
+                <li><a href="/"><Image
+            src="/logo.svg"
+            alt="WEvolve"
+            width={190}
+            height={50}
+            /></a></li>
+                <li><a href="/account">Account</a></li>
+                <li><button onClick={() => signOut()}>Sign out</button></li>
+            </ul>
             <main>{children}</main>
+            </>
           ) : (
+            <>
             <p>You need to sign in to view this page!</p>
+            <button onClick={() => signIn()}>Sign in</button>
+            </>
           )}
         
         <footer className="mt-auto">

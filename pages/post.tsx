@@ -13,23 +13,14 @@ export default function Home() {
 
   console.log(session);
 
-  // Some function that gets the posts
-  //const posts = ["beedldee"];
-  const { data: postArray, mutate, isValidating } = useSWR('api/getPosts', fetcher);
-
-  console.log(postArray);
-
-  if (isValidating) {
-    return <>
-      <p>Loading...</p>
-    </>
-  }
   
   return (
     <div>
       <Template>
-        <p>i am the home page i am the home page</p>
-        
+        <form action="">
+            <input type="file" id="myFile" name="filename"/>
+            <input type="submit"/>
+        </form>
       </Template>
     </div>
 
