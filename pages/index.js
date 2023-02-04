@@ -2,34 +2,60 @@ import Head from 'next/head';
 import Template from '../components/template.js';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image'
+import { useSession, signIn, signOut } from "next-auth/react";
+import useSWR from 'swr';
+import {useState, useRef, useEffect} from 'react';
 
-import { useSession, signIn, signOut } from "next-auth/react"
+
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
 
-export default function Home() {
+export default function Home(props) {
 
   const { data: session } = useSession();
 
-  console.log(session);
+  const [question, setQuestion] = useState();
+
+
+  const questions = props.question.social.lvl1;
+
+  useEffect( () => {
+    setQuestion(questions[Math.floor(Math.random() * (questions.length-1))])
+}, [])
+
+  console.log(question)
+
+  // Some function that gets the posts
+  //const posts = ["beedldee"];
+  const { data: postArray, mutate, isValidating } = useSWR('api/getPosts', fetcher);
+
+  if (isValidating) {
+    return <>
+      <p>Loading...</p>
+    </>
+  }
   
   return (
     <div>
       <Template>
-        <ul className={styles.navigation}>
-          <li><a href="#">WEvolve</a></li>
-          <li><a href="#">Account</a></li>
-        </ul>
-        <Image
-          src="/panda.jpg"
-          alt="PANDA"
-          width={1000}
-          height={500}
-        />
-        {/* <p className="important">hi! i should be green rn &gt;:|</p>
-        <p>TestTestTestTest &gt;:|</p>
-        <button onClick={() => console.log("banana")}>Click me</button> */}
+        <p>i am the home page i am the home page</p>
+        
       </Template>
     </div>
 
   )
+}
+
+
+// Fetching data from the JSON file
+import fsPromises from 'fs/promises';
+import path from 'path'
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'challs.json');
+  const jsonData = await fsPromises.readFile(filePath);
+  const objectData = JSON.parse(jsonData);
+
+  return {
+    props: objectData
+  }
 }

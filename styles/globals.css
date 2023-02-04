@@ -1,7 +1,26 @@
-html, body {
-  background-color: #e0e0e0;
+:root {
+  /* old colors */
+  --forest: #053B06;
+  --lincoln: #0B5D1E;
+  --lime: #8De969;
+  --cream: #faf3de;
+  /* curr colors */
+  --mid-green: #DBF0D8;
+  --light-green: #F4FDF3;
+  --dark-green: #05440d;
+  --red: #FF6767;
 }
 
-p {
-  color:  #09d673;
+html, body {
+  background-color: var(--light-green);
+  margin: 0;
+  font-family: 'Rubik';
+}
+
+.hide {
+  display: none!important;
+}
+
+.shadowed {
+
 }

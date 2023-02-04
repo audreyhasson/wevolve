@@ -1,0 +1,51 @@
+{
+    "question": {
+      "Social": {
+        "l3": [
+          "Start a conversation with a random stranger"
+        ],
+        "1-2": [
+          "Go out to lunch with a friend"
+        ],
+        "4-5": [
+          "Invite your friends to a gathering"
+        ]
+      },
+      "Physical": {
+        "3": [
+          "Plan a club outing with friends this week"
+        ],
+        "1-2": [
+          "Go eat at a local cafe"
+        ],
+        "4-5": [
+          "Go to a karaoke with friends"
+        ]
+      },
+      "Food": [
+        "Make a Chinese dish"
+      ],
+      "Explore": {
+        "3": [
+          "Go thrifting"
+        ],
+        "1-2": [
+          "Go to a local park for 15 minutes"
+        ],
+        "4-5": [
+          "Go to the nearest national park"
+        ]
+      },
+      "Learning": {
+        "3": [
+          "Learn about computer RAM"
+        ],
+        "1-2": [
+          "Learn about california's musical road"
+        ],
+        "4-5": [
+          "Learn about hamming codes"
+        ]
+      }
+    }
+  }

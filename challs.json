@@ -1,0 +1,131 @@
+{
+    "question": {
+      "social": {
+        "lvl2": [
+          "Start a conversation with a random stranger",
+          "Call a family member",
+          "Compliment someone's outfit",
+          "Start a conversation with your crush",
+          "Cook a meal with a friend",
+          "Have a picnic with your friends"
+        ],
+        "lvl1": [
+          "Go out to lunch with a friend",
+          "Reach out to a family member",
+          "Write a thank you note to a mentor or someone you're grateful for",
+          "Listen to music with a friend",
+          "Go for a walk with a friend",
+          "Say hi to someone new",
+          "High-five a stranger"
+        ],
+        "lvl3": [
+            "Invite your friends to a gathering",
+            "Take a selfie with a stranger",
+            "Start a conversation with your crush",
+            "Call a family member",
+            "Have a picnic with your friends",
+            "High-five a stranger",
+            "Offer a hug to stranger"
+        ]
+      },
+      "physical": {
+        "lvl2": [
+            "Plan a club outing with friends this week",
+            "Go to a Karaoke with friends",	
+            "Look for events near you",
+            "Plan to go bowling this week",
+            "Plan to go to the arcade this week",
+            "Paint what's on your mind"
+        ],
+        "lvl1": [
+            "Go eat at a local cafe",
+            "Eat a meal outsideListen to a podcast outside",
+	        "Paint what's on your mind",
+	        "Go out and take a picture of something cute"
+        ],
+        "lv3": [
+            "Plan a club outing with friends this week",
+            "Go to a karaoke with friends",
+            "Look for events near you",
+            "Go for a swim",
+            "Plan to go bowling this week",
+            "Plan to go to the arcade this week"
+        ]
+      },
+      "food": [
+            "Try some Chinese cuisine",
+	        "Make a Chinese dish",
+	        "Try some Japanese cuisine",
+	        "Make a Japanese dish",
+	        "Try some Indian cuisine",
+	        "Make an Indian dish",
+            "Try some Italian cuisine",
+            "Make an Italian dish",
+            "Try some Greek cuisine",
+            "Make a Greek dish",
+            "Try some Latin cuisine",
+            "Make a Latin dish",
+            "Try some Turkish cuisine",
+            "Make a Turkish dish",
+            "Try some Thai cuisine",
+            "Make a Thai dish",
+            "Buy yourself a sweet dessert",
+            "Buy yourself a bitter snack",
+            "Try out a fruit you've never had before"
+      ],
+      "explore": {
+        "lvl2": [
+            "Plan a trip with some friends",
+            "Explore your nearest park",
+            "Go thrifting",
+            "Visit a local shop",
+            "Go to a new area in your city/county"
+        
+        ],
+        "lvl1": [
+            "Go to a local park for 15 minutes",
+            "Visit you city hall",
+            "Take public transportation",
+            "Visit your nearest body of water",
+            "Visit a local shop"
+        
+        ],
+        "lvl3": [
+            "Go to the nearest national park",
+            "Go thrifting",
+            "Plan to go to a zoo/aquarium this week"
+        ]
+      },
+      "learning": {
+        "lvl2": [
+            "Learn about vectors",
+            "Learn how viruses work",
+            "Learn how the internet works",
+            "Learn about computer RAM",
+            "Learn basics of stock trading",
+            "How does cheese become cheese?",
+            "Learn about atp respiration",
+            "Learn about photosynthesis"
+        
+        ],
+        "lvl1": [
+            "Learn about california's musical road",
+            "Learn how a toaster works",
+            "Learn how video resolutions work",
+            "Read for 15 minutes",
+            "Take 15 minutes to learn operations in python",
+            "Take 10 minutes of your day to learn about the psychology of social influences",
+            "Take 10 minutes to learn about supply and demand",
+            "Take 10 minutes to learn about the history of Alexander the Great"
+            
+        ],
+        "lvl3": [
+            "Learn about hamming codes",
+            "Learn about fourier transforms",
+            "Learn backtracking on your favorite programming language",
+            "Learn about phospholipid layer"
+            
+        ]
+      }
+    }
+  }
