@@ -1,0 +1,28 @@
+
+
+.sideBar {
+  text-decoration: none;
+  display: block;
+  padding-right: 1rem;
+  height: calc(100vh - 80px);
+  float: left;
+  width: 300px;
+  background-color: var(--mid-green);
+  /* smaller { font-size: 11px; } */
+}
+
+.title{
+  font-size: 30px;
+}
+
+.info {
+  font-size: 10px;
+}
+/* 
+.evolvePlus {
+  float: left;
+  background-color: var(--mid-green);
+  text-decoration: none;
+  display: block;
+  float: left;
+} */

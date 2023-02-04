@@ -51,7 +51,9 @@ export default function Template( {children}) {
                 <li><button onClick={() => signOut()}>Log out</button></li>
             </ul>
         </div>
-        {session && session.user ? (
+        <div className={styles.overlay + " hide"} id="overlay"></div>
+            <main id="main">{children}</main>
+        {/* {session && session.user ? (
             <>
             <div className={styles.overlay + " hide"} id="overlay"></div>
             <main id="main">{children}</main>
@@ -62,15 +64,15 @@ export default function Template( {children}) {
             <p>You need to sign in to view this page!</p>
             <button onClick={() => signIn()}>Sign in</button>
             </>
-          )}
+          )} */}
         
-        <footer className="mt-auto">
+        {/* <footer className="mt-auto">
             <div className="bg-main-gray h-24 p-5 text-whitish">
                 <div className="w-1/2">
                     <p>This is the bottom of the template!</p>
                 </div>
             </div>
-        </footer>
+        </footer> */}
         </div>
     </>
   );
