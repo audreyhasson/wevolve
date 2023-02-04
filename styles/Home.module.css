@@ -32,18 +32,18 @@
 
 .topLeft {
   position: absolute;
-  top: 8px;
-  left: 16px;
+  top: -16px;
+  left: 70px;
 }
 
 .bottomRight {
   position: absolute;
-  top: 70px;
-  left: 16px;
+  top: 30px;
+  left: 70px;
 }
 
 .post p {
   background-color: var(--dark-green);
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 20px;
 }

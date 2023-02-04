@@ -1,4 +1,4 @@
-.myStyle {
+.myStyle a{
     text-decoration: none!important;
     color: var(--light-green)!important;
 }

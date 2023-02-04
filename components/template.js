@@ -29,6 +29,7 @@ export default function Template( {children}) {
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"></link>
         </Head>
         <div className={styles.navWrapper}>
             <a href="/"><Image
@@ -52,20 +53,20 @@ export default function Template( {children}) {
                 <li><button onClick={() => signOut()}>Log out</button></li>
             </ul>
         </div>
-        <div className={styles.overlay + " hide"} id="overlay"></div>
-            <main id="main">{children}</main>
-        {/* {session && session.user ? (
+        {/* <div className={styles.overlay + " hide"} id="overlay"></div>
+            <main id="main">{children}</main> */}
+        {session && session.user ? (
             <>
             <div className={styles.overlay + " hide"} id="overlay"></div>
             <main id="main">{children}</main>
             
             </>
           ) : (
-            <>
+            <div className={styles.banana}>
             <p>You need to sign in to view this page!</p>
             <button onClick={() => signIn()}>Sign in</button>
-            </>
-          )} */}
+            </div>
+          )}
         
         {/* <footer className="mt-auto">
             <div className="bg-main-gray h-24 p-5 text-whitish">

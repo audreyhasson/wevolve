@@ -14,39 +14,45 @@ export default function Account() {
   function openCreate(e) {
     console.log("Going to Create page");
     }
+
+  const pics = [["have meal with friend", "/snackFriend.jpg"],
+  ["go onstage", "/foolCrowd.jpg"],
+  ["talk to your crush", "/talkToCrush.jpg"],]
   
   return (
     <>
         <Template>
-          <div className={styles.sideBar} id="sideBar">
-            {/* <p>{session?.user?.name}</p> */}
-            <div id = "header">
-              <p>BIO</p>
-            </div>
-
-            <div id = "info">
-              <p>mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist</p>
-            </div> 
-
-            <div id = "title">
-              <p>YOUR INFO</p>
-            </div>
-
-            <div id = "info">
-              <p>Alan Turing</p>
-              <p>csGod01@fatherofcomputerscience.com</p>
-              <p>{session?.user?.name}</p>
+          <div className={styles.container}>
+            <div className={styles.topBar}>
+            <div>
+              <h1>User: {session?.user?.name}</h1>
               <p>{session?.user?.email}</p>
-            </div> 
-
-            <li><a href="/post">EVOLVE
-              <Image
-                src="/plus.svg"
-                alt="Drop down"
-                width={30}
-                height={30}
-                />
-              </a></li>
+              <p>Your previous posts:</p>
+              
+            </div>
+            <div className={styles.evolve}>
+              <a href="/post">
+              <Image 
+              src="/plus.svg"
+              width={30}
+              height={30}
+              />
+              <span>EVOLVE</span>
+              </a>
+            </div>
+            </div>
+            
+            {pics.map((pic)=>
+              <div className={styles.post}>
+                <Image
+                    src={pic[1]}
+                    alt="Stock pic"
+                    width={350}
+                    height={350}
+                    />
+                <p className={styles.topLeft}>{pic[0]}</p>
+              </div>
+            )}
           </div>
         </Template>
     </>

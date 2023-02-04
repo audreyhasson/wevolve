@@ -36,8 +36,10 @@
 .dropDown a {
     text-decoration: none;
     color: var(--dark-green);
-    padding: 1rem;
+    padding: .6rem .5rem .3rem .5rem;
+    margin: 1.3rem 1rem 1.3rem 0;
     border-radius: 10px;
+    transition: .3s;
 }
 
 .dropDown a:hover {
@@ -64,7 +66,12 @@
     margin-bottom: 1rem;
 }
 
-.dropDown button {
+.banana {
+    text-align: center;
+    margin: auto;
+}
+
+.dropDown button, .banana button {
     background-color: var(--dark-green);
     color: var(--light-green);
     outline: none;
@@ -76,6 +83,7 @@
 
 .dropDown button:hover {
     cursor: pointer;
+    transition: .2s;
 }
 
   .overlay {

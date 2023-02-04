@@ -552,7 +552,7 @@ export default function Form() {
                     name="likely"></input>
 		</div>
 
-		<button className={"banana " + styles.myStyle} type="submit" value="submit"><a href="/">
+		<button className={"banana " + styles.myStyle} ><a href="/">
 			Submit
             </a></button>
 	</form>

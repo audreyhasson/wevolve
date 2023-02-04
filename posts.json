@@ -6,6 +6,12 @@
         ["take a trip with friends", "/takeTripFriend.jpg", "Pam"],
         ["write a thank you note", "/writeThankYou.jpg", "Natalie"],
         ["plan an outing", "/planAnOuting.JPEG", "Ethan"],
-        ["selflie with a stranger", "/selfieWStranger.jpg", "Mateo"]
+        ["selflie with a stranger", "/selfieWStranger.jpg", "Mateo"],
+        ["go on a hike", "/goHike.jpg", "Abby"],
+        ["try lady and the tramp", "/lady and the tramp.JPEG", "Doris"],
+        ["start learning a language", "/learnPython.jpg", "Andrei"],
+        ["try a new cuisine", "/tryChinese.jpg", "Elijah"],
+        ["eat with a friend", "/tryNewfood.jpg", "Deniz"],
+        ["make a human pyramid", "/tryPyramid.jpg", "Joyce"]
     ]
 }
