@@ -1,15 +1,26 @@
 :root {
+  /* old colors */
   --forest: #053B06;
   --lincoln: #0B5D1E;
   --lime: #8De969;
   --cream: #faf3de;
+  /* curr colors */
+  --mid-green: #DBF0D8;
+  --light-green: #F4FDF3;
+  --dark-green: #05440d;
+  --red: #FF6767;
 }
 
 html, body {
-  background-color: var(--cream);
+  background-color: var(--light-green);
   margin: 0;
+  font-family: 'Rubik';
 }
 
-p {
-  color:  #09d673;
+.hide {
+  display: none!important;
+}
+
+.shadowed {
+
 }

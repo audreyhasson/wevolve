@@ -5,7 +5,21 @@ import { useSession, signIn, signOut } from "next-auth/react"
 
 export default function Template( {children}) {    
 
-  const { data: session } = useSession()
+  const { data: session } = useSession();
+
+  function toggleDrop(e) {
+    e.preventDefault();
+    console.log("trying to drop this shit down");
+    const dropdown = document.getElementById("dropdown");
+    const overlay = document.getElementById("overlay")
+    if (dropdown.classList.contains("hide")) {
+        dropdown.classList.remove("hide")
+        overlay.classList.remove("hide")
+    } else {
+        dropdown.classList.add("hide")
+        overlay.classList.add("hide")
+    }
+  }
 
   return (
     <>
@@ -16,19 +30,32 @@ export default function Template( {children}) {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
         </Head>
+        <div className={styles.navWrapper}>
+            <a href="/"><Image
+                src="/logo.svg"
+                alt="WEvolve"
+                width={190}
+                height={50}
+                /></a>
+            <button className={styles.navButton} onClick={(e) => toggleDrop(e)}><a href="/"><Image
+                src="/threeLines.svg"
+                alt="Drop down"
+                width={30}
+                height={30}
+                /></a></button>
+        </div>
+        <div className={styles.dropDown + " hide"} id="dropdown">
+            <ul>
+                <li><a href="/post">POST</a></li>
+                <li><a href="/account">Account</a></li>
+                <li><button onClick={() => signOut()}>Log out</button></li>
+            </ul>
+        </div>
         {session && session.user ? (
             <>
-            <ul className={styles.navigation}>
-                <li><a href="/"><Image
-            src="/logo.svg"
-            alt="WEvolve"
-            width={190}
-            height={50}
-            /></a></li>
-                <li><a href="/account">Account</a></li>
-                <li><button onClick={() => signOut()}>Sign out</button></li>
-            </ul>
-            <main>{children}</main>
+            <div className={styles.overlay + " hide"} id="overlay"></div>
+            <main id="main">{children}</main>
+            
             </>
           ) : (
             <>

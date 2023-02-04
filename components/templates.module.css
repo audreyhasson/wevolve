@@ -1,4 +1,4 @@
-.navigation {
+/* .navigation {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -8,13 +8,71 @@
     background: #262625;
   }
   
-  .navigation a {
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: white;
-  }
-  
   .navigation a:hover {
     background: #1565C0;
+  } */
+
+  .navWrapper {
+    background-color: var(--mid-green);
+    height: 80px;
+  }
+
+  .navWrapper img {
+    width: 80%;
+    margin-left: 10%;
+    padding: 1rem;
+  }
+
+  .navButton {
+    float: right;
+    background-color: var(--mid-green);
+    outline: none;
+    border: none;
+    padding-right: 2rem;
+    padding-left: 0;
+    margin-top: .5rem;
+  }
+
+  .dropDown {
+    text-decoration: none;
+    display: block;
+    padding-right: 1rem;
+    height: calc(100vh - 80px);
+    float: right;
+    width: 300px;
+    background-color: var(--mid-green);
+  }
+
+  .dropDown ul {
+    list-style-type: none;
+    font-size: 30px;
+  }
+
+.dropDown li {
+    margin-bottom: 1rem;
+}
+
+.dropDown button {
+    background-color: var(--dark-green);
+    color: var(--light-green);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    font-size: 20px;
+  }
+
+.dropDown button:hover {
+    cursor: pointer;
+}
+
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: calc(100vw - 300px - 1rem);
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   }
